@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">kotlin_example_app</string>
+    <string name="this_is_introduce_fragment">This is Introduce Fragment</string>
+    <string name="click_me">Click me</string>
+    <string name="hello_world">Hello, World!</string>
+    <string name="welcome_to_my_app">Welcome to my app</string>
+    <string name="let_s_go">Let\'s Go</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
