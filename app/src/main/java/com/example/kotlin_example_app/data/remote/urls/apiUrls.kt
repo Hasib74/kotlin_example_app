@@ -9,6 +9,9 @@ class ApiUrls {
     companion object {
         const val BASE_URL = "https://fakestoreapi.com/"
         const val GET_PRODUCT = "products"
+
+
+
     }
 
     val  getPosts = "posts"

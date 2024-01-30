@@ -1,6 +1,10 @@
+import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.kapt")
+
     /*   id("kotlin-parcelize")
        id("androidx.navigation.safeargs.kotlin")
       // id("com.google.dagger.hilt.android")
@@ -47,6 +51,9 @@ android {
     }
 }
 
+
+
+
 dependencies {
 
 
@@ -54,6 +61,7 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+
 
     val nav_version = "2.7.6"
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
@@ -78,6 +86,13 @@ dependencies {
 
     implementation("com.github.bumptech.glide:glide:4.12.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
+
+    //Room
+    var room_version = "2.6.1"
+    implementation("androidx.room:room-runtime:$room_version")
+    annotationProcessor("androidx.room:room-compiler:$room_version")
+    kapt("androidx.room:room-compiler:$room_version")
+    implementation("androidx.room:room-ktx:$room_version")
 
 
     /*
@@ -119,8 +134,5 @@ dependencies {
 
 }
 
-/*
-kapt {
-    correctErrorTypes = true
-}
-*/
+
+
